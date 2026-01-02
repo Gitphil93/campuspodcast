@@ -1,0 +1,73 @@
+.podcard-wrapper{
+    margin-top: 1rem;
+    display: flex;
+    background-color: var(--background-zinc);
+    border: 1px solid var(--border);
+    flex-direction: column;
+    width: 349px;
+    height: 489px;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.podcard-img {
+    width: 315px;
+    height: 315px;
+    object-fit:contain;
+}
+.podcard-desc{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+.podcard-desc h4 {
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+#podcard-author{
+    color: var(--grey-white);
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+#podcard-summary{
+    color: var(--grey-white-alpha);
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.podcard-bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.podcard-category{
+    padding:6px;
+    background-color: var(--grey-white-alpha);
+    color: var(--grey-white);
+    font-size: .8rem;
+    font-weight: 100;
+    border-radius: 10px;
+}
+
+.podcard-bottom p{
+    color: var(--grey-white-alpha);
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+
+
+ .podcard-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit:fill;
+} 

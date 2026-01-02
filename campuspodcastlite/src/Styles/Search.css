@@ -1,0 +1,30 @@
+.search-section {
+    position: relative;
+}
+
+.search-input{
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    padding-left: 4rem;
+    font-size: 1rem;
+    background-color: var(--background-zinc);
+    border: 1px solid var(--border);
+    outline: none;
+    border-radius: 10px;
+    font-weight: 100;
+    letter-spacing: .5px;
+}
+
+.search-input::placeholder{
+    color: var(--white);
+    font-weight: 100;
+    letter-spacing: .5px;
+}
+
+#magnifying-glass{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%) ;
+ left: 1rem;
+}

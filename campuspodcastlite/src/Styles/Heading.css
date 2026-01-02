@@ -1,0 +1,19 @@
+.heading-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 1rem
+}
+
+.heading-wrapper img{
+    padding: 2px;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.heading-wrapper h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}

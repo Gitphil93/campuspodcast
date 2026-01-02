@@ -1,0 +1,46 @@
+.header-container{
+    height: 10rem;
+    width: 100%;
+    background-color: var(--light-black);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.header-logo {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: 3rem;
+}
+
+.logo-text{
+    line-height: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.header-logo h2 {
+    font-size: .8rem;
+    color: var(--grey-white);
+    font-weight: 400;
+}
+.header-logo h1 {
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+#headerlogo{
+    display: flex;
+    padding: .5rem;
+    height:3rem;
+    width: 3rem;
+    background-color: var(--green);
+    border-radius: 10px;
+}
