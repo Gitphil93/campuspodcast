@@ -1,4 +1,5 @@
 .podcard-wrapper{
+    position: relative;
     margin-top: 1rem;
     display: flex;
     background-color: var(--background-zinc);
@@ -9,13 +10,29 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 20px 25px -5px transparent, 0 8px 10px -6px transparent;
+    transform: scale(1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+    overflow: hidden;
 }
 
-.podcard-img {
+.podcard-media {
+    position: relative;
+    width: 315px;
+    height: 315px;
+    border-radius: 10px;
+    overflow: hidden;     
+  }
+
+ .podcard-img {
+    position: relative;
     width: 315px;
     height: 315px;
     object-fit:contain;
-}
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+} 
 .podcard-desc{
     display: flex;
     flex-direction: column;
@@ -28,6 +45,7 @@
 .podcard-desc h4 {
     font-size: 1.1rem;
     color: var(--white);
+    transition: color 0.2s ease;
 }
 
 #podcard-author{
@@ -55,6 +73,7 @@
     font-size: .8rem;
     font-weight: 100;
     border-radius: 10px;
+    transition: color 0.2s ease;
 }
 
 .podcard-bottom p{
@@ -63,11 +82,52 @@
     font-weight: 100;
 }
 
+.play-button-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(.5);
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
 
-
- .podcard-wrapper img {
-    width: 100%;
+.play-button{
     height: 100%;
-    border-radius: 10px;
-    object-fit:fill;
-} 
+    width: 100%;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+.podcard-wrapper:hover .play-button-container {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.podcard-wrapper:hover .podcard-desc h4 {
+    color: var(--green);
+}
+
+.podcard-wrapper:hover {
+    opacity: 1;
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px var(--green-alpha), 0 8px 10px -6px var(--green-alpha);
+    pointer-events: auto;
+    border: 1px solid var(--green-alpha);
+}
+
+.podcard-wrapper:hover .podcard-category{
+    background-color: var(--green-alpha);
+    color: var(--green);
+}
+
+.podcard-wrapper:hover .podcard-img{
+    transform: scale(1.08);
+}
