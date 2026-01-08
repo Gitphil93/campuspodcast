@@ -19,6 +19,11 @@ export default function Home() {
         <PodCard key={pod.id} podObj={pod} />
       ))}
     </div>
+
+    <Heading
+        logo="/trending.svg"
+        text="Trending Now"
+      />
     </main>
     </>
   )
